@@ -2,8 +2,8 @@ PATH
   remote: .
   specs:
     github_org_manager (0.0.1)
-      netrc
-      octokit
+      netrc (~> 0.11.0)
+      octokit (~> 4.22.0)
 
 GEM
   remote: https://rubygems.org/
@@ -98,7 +98,7 @@ PLATFORMS
 
 DEPENDENCIES
   github_org_manager!
-  guard-rspec
+  guard-rspec (~> 4.7.3)
   rake (~> 13.0)
   rspec (~> 3.0)
 

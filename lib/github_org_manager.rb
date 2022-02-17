@@ -46,7 +46,7 @@ module GithubOrgManager
 
       @client = client(octokit_params:, &octokit_configuration)
 
-      @repos = CLIENT.org_repos(@org_name).to_h do |repo_data|
+      @repos = @client.org_repos(@org_name).to_h do |repo_data|
         [repo_data[:name], repo_data[:html_url]]
       end
 
