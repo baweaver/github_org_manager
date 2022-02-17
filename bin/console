@@ -11,5 +11,7 @@ require "github_org_manager"
 # require "pry"
 # Pry.start
 
+MANAGER = GithubOrgManager::Manager.new(org_name: "dry-rb")
+
 require "irb"
 IRB.start(__FILE__)

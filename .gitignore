@@ -9,3 +9,6 @@
 
 # rspec failure tracking
 .rspec_status
+
+# Builds of the gem
+*.gem

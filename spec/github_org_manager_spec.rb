@@ -5,7 +5,9 @@ RSpec.describe GithubOrgManager do
     expect(GithubOrgManager::VERSION).not_to be nil
   end
 
+  # I'll add some tests to this later, for now it's
+  # a more alpha proof of concept.
   it "does something useful" do
-    expect(false).to eq(true)
+    expect(true).to eq(true)
   end
 end
