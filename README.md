@@ -10,6 +10,12 @@ manager = GithubOrgManager::Manager.new(
   # more accurately read from for now.
   org_name: "<YOUR_ORG_HERE>",
 
+  # If you would like to limit this to only teams that the
+  # "logged in" user currently belongs to, set this to
+  # true and all downloads and updates will be scoped as
+  # such.
+  team_only: true,
+
   # Directory where your code typically is, defaults to
   # `~/dev` and ensures it exists
   dev_home: "<WHERE_YOUR_CODE_LIVES>",
@@ -45,11 +51,15 @@ gem 'github_org_manager'
 
 And then execute:
 
-    $ bundle install
+```sh
+$ bundle install
+```
 
 Or install it yourself as:
 
-    $ gem install github_org_manager
+```sh
+$ gem install github_org_manager
+```
 
 ## Development
 
@@ -59,7 +69,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/github_org_manager. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/github_org_manager/blob/main/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/baweaver/github_org_manager. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/baweaver/github_org_manager/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
